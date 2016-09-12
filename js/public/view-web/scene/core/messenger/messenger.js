@@ -66,10 +66,9 @@ class Messenger extends React.Component {
         let messageConfig = messageConfigData
         messageConfig['title'] = this.props.selected.name
     	return (
-    		<section className='messenger list column-4-3'>
+    		<section className='messenger list column-1'>
     			<section className='chat column-1'>
-		          	<Subribbon {...messageConfig}></Subribbon>
-	          		<Chat messages={this.props.messages} _handleKeyPress={this._handleKeyPress.bind(this)}></Chat>
+	          		<Chat></Chat>
 		        </section>
     		</section>
     	)
@@ -78,10 +77,10 @@ class Messenger extends React.Component {
 }
 
 const mapStateToProp = (state) => {
+    // make sure to get messages from the chat
     return {
         user: state.auth.user,
         selected: state.groups.selected,
-        messages: state.chat.messages,
         isFetching: state.groups.isFetching
     }
 }

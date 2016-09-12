@@ -4,7 +4,6 @@ import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import * as  Actions from './../../actions'
 
-import Sidenav from './core/sidenav/sidenav'
 import Ribbon from './core/ribbon/ribbon'
 import Messenger from './core/messenger/messenger'
 
@@ -21,9 +20,8 @@ class Scene extends React.Component {
   				return (
   					<section className="window">
 		  				<Ribbon></Ribbon>
-						<Sidenav></Sidenav>
-						<Messenger></Messenger>
-					</section>
+						  <Messenger></Messenger>
+            </section>
   				)
   		}
   	}

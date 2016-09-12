@@ -6,7 +6,7 @@ class Ribbon extends React.Component {
   render() {
     return (
     	<section className='ribbon column-1'>
-	      	<h1>Gong!</h1>
+	      	<h1>Koh's React Boilerplate!</h1>
     	</section>
     );
   }
