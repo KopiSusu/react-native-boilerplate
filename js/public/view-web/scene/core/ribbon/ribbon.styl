@@ -1,0 +1,49 @@
+@import './../global.styl'
+
+.ribbon
+	height ribbonHeight
+	border-bottom 1px solid strokeColor
+	padding 0 buffer
+	background bgColor
+	h1
+		line-height ribbonHeight
+		padding 0 buffer
+	.icon
+		padding buffer (buffer / 2)
+		&.under
+			padding (buffer / 2) buffer
+			svg
+				height 50%
+			p
+				height 50%
+				line-height ((ribbonHeight / 2) - (buffer / 2))
+				font-size 12px
+	.header
+		display inline-block
+		&.subtitle
+			h1
+				line-height (ribbonHeight * (3.5/6))
+			p
+				line-height (ribbonHeight * (2/6))
+				height (ribbonHeight * (2/6))
+				display inline-block
+				padding 0 buffer 0 0
+			.icon
+				height 13px
+				padding (buffer / 8) 0
+			.button
+				cursor pointer
+				&:hover
+					&.interactive
+						p
+							color: primaryColor
+						svg
+							fill primaryColor
+					&:active
+						p
+							color: primaryColor
+						svg
+							fill primaryColor
+
+		
+		

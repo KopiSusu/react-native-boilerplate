@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name": "Gabe",
+		"icon": "WhatsApp",
+ 		"query": {}
+	},
+	{
+		"id": 2,
+		"name": "Sri",
+		"icon": "WhatsApp",
+		"query": {}
+	},
+	{
+		"id": 3,
+		"name": "Veronica",
+		"icon": "Facebook",
+		"query": {}
+	},
+	{
+		"id": 4,
+		"name": "Mike",
+		"icon": "Email",
+		"query": {}
+	},
+	{
+		"id": 5,
+		"name": "Matt",
+		"icon": "Facebook",
+		"query": {}
+	},
+	{
+		"id": 6,
+		"name": "Nick",
+		"icon": "Email",
+		"query": {}
+	}
+]

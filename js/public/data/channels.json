@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"name": "Family",
+		"icon": "WhatsApp",
+ 		"query": {}
+	},
+	{
+		"id": 2,
+		"name": "Friends",
+		"icon": "Facebook",
+		"query": {}
+	},
+	{
+		"id": 3,
+		"name": "Work",
+		"icon": "Email",
+		"query": {}
+	},
+	{
+		"id": 4,
+		"name": "Bars",
+		"icon": "Facebook",
+		"query": {}
+	},
+	{
+		"id": 5,
+		"name": "Freelance",
+		"icon": "Email",
+		"query": {}
+	}
+]
