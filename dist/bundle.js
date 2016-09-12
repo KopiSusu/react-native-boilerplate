@@ -54805,10 +54805,6 @@
 
 	var _reactRouterRedux = __webpack_require__(265);
 
-	var _groups = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./sidenav/groups\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _groups2 = _interopRequireDefault(_groups);
-
 	var _auth = __webpack_require__(575);
 
 	var _auth2 = _interopRequireDefault(_auth);
@@ -54820,11 +54816,11 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var rootReducer = (0, _redux.combineReducers)({
-	  groups: _groups2.default,
 	  auth: _auth2.default,
 	  chat: _chat2.default,
 	  routing: _reactRouterRedux.routerReducer
 	});
+
 	exports.default = rootReducer;
 
 	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "index.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "index.js"); } } })();
@@ -55424,10 +55420,6 @@
 
 	var Actions = _interopRequireWildcard(_actions);
 
-	var _subribbon = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../../common/subribbon/subribbon\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _subribbon2 = _interopRequireDefault(_subribbon);
-
 	var _chat = __webpack_require__(585);
 
 	var _chat2 = _interopRequireDefault(_chat);
@@ -55443,36 +55435,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var messageConfigData = {
-	    title: '',
-	    subTitle: {
-	        name: 'Add Note',
-	        type: 'button',
-	        icon: 'PlusOutline',
-	        iconClass: 'interactive'
-	    },
-	    iconArray: [{
-	        type: 'icon',
-	        icon: 'Options',
-	        iconClass: 'interactive right'
-	    }, {
-	        type: 'icon',
-	        icon: 'StarOutline',
-	        iconClass: 'interactive right'
-	    }, {
-	        type: 'search',
-	        iconClass: 'right'
-	    }, {
-	        type: 'icon',
-	        icon: 'Cash',
-	        iconClass: 'interactive right dim'
-	    }, {
-	        type: 'icon',
-	        icon: 'Gear',
-	        iconClass: 'interactive right dim'
-	    }]
-	};
 
 	var Messenger = function (_React$Component) {
 	    _inherits(Messenger, _React$Component);
@@ -55500,8 +55462,6 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var messageConfig = messageConfigData;
-	            messageConfig['title'] = this.props.selected.name;
 	            return _react2.default.createElement(
 	                'section',
 	                { className: 'messenger list column-1' },
@@ -55520,9 +55480,7 @@
 	var mapStateToProp = function mapStateToProp(state) {
 	    // make sure to get messages from the chat
 	    return {
-	        user: state.auth.user,
-	        selected: state.groups.selected,
-	        isFetching: state.groups.isFetching
+	        user: state.auth.user
 	    };
 	};
 

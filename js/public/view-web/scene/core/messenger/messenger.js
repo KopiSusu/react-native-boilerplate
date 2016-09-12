@@ -12,6 +12,11 @@ class Messenger extends React.Component {
         super(props)
     }
 
+    // This goes out and fetchs our data's
+    componentWillMount() {
+        this.props.fetchData('chat', '_FETCH_MESSAGES')
+    }
+
     _handleKeyPress(e) {
         if (e.key === 'Enter') {
             
@@ -25,6 +30,8 @@ class Messenger extends React.Component {
         }
     }
 
+    // Add Chat (to view the messages)
+    // Add Input (to submit new messages)
   	render() {
     	return (
     		<section className='messenger list column-1'>

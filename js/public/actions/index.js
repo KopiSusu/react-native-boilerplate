@@ -31,9 +31,11 @@ export const receiveData = (json, returnType, nestedKey) => {
 export function fetchData(url, returnType, nestedKey) {
   return function (dispatch) {
     return fetch(`https://s3.amazonaws.com/datadummy/${url}.json`)
-      .then(response => response.json())
-      .then(json =>
-        dispatch(receiveData(json, returnType, nestedKey))
-      )
+      .then(response => {
+        return response.json()
+      })
+      .then(json => {
+        return dispatch(receiveData(json, returnType, nestedKey))
+      })
   }
 }
