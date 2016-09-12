@@ -1,6 +1,6 @@
-# GONG
+# Kohs React Native Boilerplate!
 
-Gong is a commerce platform for mobile messaging apps.
+iOS - Android - Webs.
 
 To get the client running<br>
 1. npm install from client directory<br>
